@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var dempt = 0;
+        function messeger(kt, arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (kt == arr[i]) {
+                    dempt = dempt + 1;
+                }
+            }
+            if (dempt >= 1) {
+                document.write("Ký tự ", a, " xuất hiện ", dempt);
+            } if (dempt == 0) {
+                document.write("Ký tự đã nhập không nằm trong mảng")
+            }
+        }
+        var b = ["b", "c", "d", "e", "f", "g", "h", "b", "c", "d", "e", "f", "g", "h", "b", "b", "c"];
+        var a = prompt("Nhập ký tự bất kỳ");
+        messeger(a, b);  
+    </script>
+
+</body>
+
+</html>
